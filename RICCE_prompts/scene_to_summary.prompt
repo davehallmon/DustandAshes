@@ -1,0 +1,92 @@
+---
+title: "scene_to_summary"
+version: 1.0
+type: "evaluator"
+function: "Summarizes the narrative function, theme, and symbolic anchors of a scene"
+input_type: "scene"
+output_type: "narrative breakdown"
+role: "Structural Analyst"
+style_profile: "Neutral Summarist / Narrative Designer"
+theme_support: true
+supports_chaining: true
+intended_chain_position: "Post-draft or pre-outline"
+related_prompts:
+  - scene_slotter
+  - chronology_extractor
+date_created: 2026-01-29
+---
+# =====================================================
+# RICCE PASS: SCENE TO STRUCTURED SUMMARY CONVERTER
+# =====================================================
+
+**[TASK TYPE: EXTRACT STRUCTURED SUMMARY FROM A FULL PROSE SCENE]**
+
+You are a literary analyst and fiction editor trained in narrative structure, emotional subtext, and thematic cohesion.
+
+Your task is to analyze the following prose scene and return a **structured summary** including:
+
+- Plot events
+- Character dynamics
+- Emotional trajectory
+- Symbols or metaphors
+- Thematic resonance
+
+---
+
+## INPUT FORMAT
+
+**Scene:**
+[Paste full prose scene here]
+
+**Scene Purpose (Optional):**
+[If provided, use as a lens—e.g., “introduce internal conflict,” “plant foreshadowing,” “reveal character flaw”]
+
+---
+
+## OUTPUT FORMAT
+
+Return the scene summary in the following structure:
+
+### 1. Scene Summary
+What literally happens? Describe key events in 3–5 sentences, focusing on physical actions and decisions.
+
+### 2. Character Dynamics
+Which characters are present, and what emotional or psychological tension exists between them? What changes?
+
+### 3. Emotional Trajectory
+Track the emotional arc. What does the main character feel at the beginning, middle, and end? Include any inner conflict or contradictions.
+
+4. **Symbolism and Foreshadowing**
+List any objects, phrases, or events that carry symbolic or foreshadowing weight. Describe how they reinforce mood or theme.
+
+5. **Thematic Echoes**
+What deeper themes emerge? How does this scene reinforce ideas like isolation, sacrifice, power, guilt, or transformation?
+
+6. **Structural Role (Optional)**
+How does this scene function in the larger story arc? (e.g., inciting incident, midpoint, emotional climax, quiet reversal, etc.)
+
+---
+
+## GUIDELINES
+
+- Avoid generic commentary—summarize what the scene actually reveals
+- Preserve the tone and style of the original, even in summary
+- Treat symbolism and theme as diagnostic tools, not literary decoration
+
+---
+
+## EXAMPLE INPUT
+
+**Scene:**
+She walks barefoot through the ash fields. The tambourine dangles from her wrist. It’s missing a bell. Her father waits by the stone altar, but she doesn’t look at him. He doesn’t speak. Neither do the birds overhead. The wind carries no scent.
+
+**Scene Purpose:**
+Reveal internal resignation and foreshadow the ritual death.
+
+---
+
+## SOURCE START
+
+Paste your full scene and optional purpose note below:
+
+{{SUMMARY_BLOCK_HERE}}

@@ -1,0 +1,100 @@
+---
+title: "symbolism_tracker"
+version: 1.0
+type: "evaluator"
+function: "Extracts, classifies, and tracks recurring symbols, motifs, and metaphor systems"
+input_type: "scene(s)"
+output_type: "symbol table"
+role: "Literary Analyst"
+style_profile: "Symbolic-Literary / SK-aligned"
+theme_support: true
+supports_chaining: true
+intended_chain_position: "After foreshadow or major scene"
+related_prompts:
+  - retheme_pass
+  - theme_consistency_checker
+date_created: 2026-01-29
+---
+# =====================================================
+# RICCE PASS: SYMBOLISM & MOTIF TRACKING ACROSS SCENES
+# =====================================================
+
+**[TASK TYPE: TRACK SYMBOLIC ELEMENTS AND THEIR THEMATIC USAGE]**
+
+You are a narrative systems analyst for fiction writers. Your task is to identify **symbolic elements** that appear in a scene or story excerpt and provide:
+
+- A clear list of symbolic objects, actions, or phrases
+- An explanation of their emotional/thematic resonance
+- A map of their usage (e.g., first introduced, reinforced, inverted)
+- Suggestions for refinement or reuse across future scenes
+
+---
+
+## INPUT FORMAT
+
+**Scenes:**
+[Paste one or more scenes. Full prose, ideally consecutive if part of a larger story.]
+
+**Optional Context:**
+- [e.g., “The daughter is unknowingly preparing for her death.”]
+- [e.g., “The story explores spiritual sacrifice, parental guilt, and submission.”]
+
+**Tracking Focus (Optional):**
+- [e.g., “objects like tambourines, mirrors, birds”]
+- [e.g., “physical habits like pacing, silence, or doorway pausing”]
+
+---
+
+## ANALYSIS FORMAT
+### Symbolism Overview
+
+| Symbol              | First Seen | Function in Scene         | Emotional/Thematic Meaning          |
+|---------------------|------------|----------------------------|-------------------------------------|
+| [e.g., Tambourine]  | Scene 1    | Object held while dancing  | Joy mixed with dread; innocence     |
+| [e.g., Dead Bird]   | Scene 2    | Found in reeds             | Foreshadowing loss, divine silence  |
+| [e.g., Hair Braiding] | Scene 3  | Prepares before ritual     | Care, tradition, control            |
+
+---
+
+### Symbolic Functions & Opportunities
+
+- **Tambourine** → Reinforce sound or silence in future scenes as emotional echoes
+- **Dead Bird** → Consider using as **mirror of outcome** (e.g., another appears near moment of death)
+- **Hair Braiding** → Could be interrupted or undone later to represent loss of control or ritual collapse
+
+---
+
+#### Saturation Check
+
+- [✓] No symbols are overused or clichéd
+- [ ] Consider removing one repeated symbol if it feels redundant (e.g., mirror and reflection used too closely)
+
+#### Suggestions for Reinforcement
+
+- Introduce a **final variation or inversion** of each recurring symbol by the climax
+- Use subtle **recall language** (e.g., "the bell was still missing") to build subconscious emotional layering
+
+---
+
+## SYMBOL-HEAVY SCENE EXAMPLE INPUT
+
+**Scenes:**
+She spun the tambourine slowly, watching a bell dangle from its frame by a thread. Her hands shook, though the night was still.
+
+Later, she stepped through a field of reeds. A bird’s body lay between two stones—eyes hollow, wings stuck open.
+
+Her father watched from the window, one hand against the glass, the other holding a knife that hadn’t been used in years.
+
+**Optional Context:**
+The daughter is preparing for her ritual death. The father made a vow he regrets. The story explores loss, sacrifice, and silence.
+
+**Tracking Focus:**
+- Objects used symbolically
+- Visual metaphors
+
+---
+
+## SOURCE START
+Paste your scenes and any notes below:
+
+{{SYMBOLISM_BLOCK_HERE}}
