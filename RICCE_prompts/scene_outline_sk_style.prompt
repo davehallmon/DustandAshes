@@ -1,0 +1,94 @@
+---
+title: "scene_outline_sk_style"
+version: 1.0
+type: "generator"
+function: "Outlines story scenes in the stylistic, thematic, and emotional structure of Stephen King"
+input_type: "story seed or theme"
+output_type: "scene-by-scene outline"
+role: "Narrative Architect"
+style_profile: "Stephen King / Psychological Horror"
+theme_support: true
+supports_chaining: true
+intended_chain_position: "Pre-writing"
+related_prompts:
+  - character_extractor_v1
+  - ritual_inserter
+date_created: 2026-01-29
+---
+# =================================================
+# RICCE STAGE: INPUT + CONTEXT + CONSTRAINTS (OUTLINE)
+# =================================================
+
+**[TASK TYPE: DRAMATIZE INTO OUTLINE]**
+
+You are a literary fiction writer emulating Stephen King’s style of storytelling—blending intimate realism, dread, character-driven tension, and grounded settings.
+
+Using the input material below, generate a **scene-level outline** suitable for prose development.
+
+---
+
+## **INPUT MATERIAL**
+Use this structure as input:
+
+**Character Name:** [From previous prompt]
+
+**Core Inner Conflict:** [1–2 sentence summary]
+
+**Thematic Tension:** [What the story explores]
+
+**“What If” Premise:** [e.g., What if a prophet fulfilled his vow but couldn't live with the cost?]
+
+---
+
+## OUTPUT FORMAT
+
+**Scene Title:** [Evocative title capturing emotional tone or metaphor]
+
+**Setting:**
+[A vivid, grounded description of where the scene takes place. Emphasize sensory detail and mood.]
+
+**Scene Summary:**
+[A high-level narrative summary of what unfolds—focusing on emotional stakes, conflict, and progression.]
+
+**Character Focus:**
+- Protagonist: [Their immediate goal or desire]
+- Obstacle: [External or internal resistance to that desire]
+- Emotional Undercurrent: [The emotional tone running beneath the scene (e.g., guilt, dread, longing)]
+
+**Suspense Elements:**
+[List 2–3 subtle elements that create tension, dread, or unease in a Stephen King fashion—e.g., a ticking clock, strange silence, a broken item, a shadow in a normal space]
+
+**Symbolism or Foreshadowing:**
+[Describe 1 symbolic element or detail that mirrors a deeper emotional or thematic idea]
+
+---
+
+## GUIDELINES
+
+- This is not a plot outline for an entire story—it is a single scene outline.
+- Focus on character, mood, emotional momentum, and tension.
+- Lean on small-town realism, internal contradiction, and symbolic detail.
+- Avoid melodrama. Prioritize internal suspense over external spectacle.
+- Let simple details (a routine gesture, an offbeat smell, a flickering light) do the emotional heavy lifting.
+
+---
+
+## EXAMPLE INPUT
+
+Return the scene outline in this structured format:
+
+**Character Name:** Jephthah’s Daughter
+
+**Core Inner Conflict:** She wants to honor her father's vow but quietly fears the weight of being sacrificed.
+
+**Thematic Tension:** Obedience vs. autonomy, love vs. divine debt
+
+**“What If” Premise:** What if a devoted daughter knew she was going to die for a vow she never agreed to—but chose to make her death meaningful?
+
+---
+
+## SOURCE START
+
+Use this space to paste the input YAML or a short summary from character_extractor_v1.md.
+
+{{INPUT_BLOCK_HERE}}

@@ -1,0 +1,105 @@
+---
+title: "pov_shift_utility"
+version: 1.0
+type: "refiner"
+function: "Converts scene POV (1st, 3rd limited, omniscient) while preserving emotional integrity"
+input_type: "scene"
+output_type: "rewritten scene"
+role: "Perspective Rewriter"
+style_profile: "Matched to original input"
+theme_support: true
+supports_chaining: true
+intended_chain_position: "As needed in revision loop"
+related_prompts:
+  - scene_to_summary
+  - threshold_scene_generator
+date_created: 2026-01-29
+---
+# =====================================================
+# RICCE PASS: POINT OF VIEW SHIFT UTILITY
+# =====================================================
+
+**[TASK TYPE: RECAST NARRATIVE PERSPECTIVE]**
+
+You are a fiction-writing assistant skilled in narrative psychology and literary structure.
+
+Given a full scene and a target POV style, your job is to rewrite the scene accordingly—preserving emotional resonance, narrative pacing, voice, and Stephen King–style authenticity.
+
+---
+
+## INPUT FORMAT
+
+**Original POV:** 
+[e.g., "Omniscient", "3rd person limited (father)", "1st person (daughter)"]
+
+**Target POV:**
+[e.g., "1st person (daughter)", "3rd person limited (mother)", "Omniscient with neutral tone"]
+
+**Scene:**
+[Full prose scene to convert]
+
+**Voice Notes (Optional):**
+[e.g., "Keep emotional restraint", "Maintain Southern dialect", "Use same sentence rhythm"]
+
+---
+
+## POV SHIFT RULES
+
+- Retain all major plot beats, emotional arcs, and tension
+- Rewrite only what’s necessary to align with new POV
+- **Adjust:**  
+- Interiority access (what thoughts/feelings are visible)
+- Narrative voice (who “owns” the description)
+- Language choices (tone, word choice, rhythm)
+- Avoid artificial omniscience unless explicitly requested
+- **Use Stephen King–style voice:**  
+- Emotion revealed through gesture or body language
+- Subtext through what’s unsaid
+- Reality tinged with quiet psychological distortion
+
+---
+
+## OUTPUT FORMAT
+Return the full rewritten scene in the target POV as immersive prose.
+
+- Do not include markup, notes, or comparisons
+- Do not explain what changed
+- Just return the rewritten scene, as if it was always written this way
+
+---
+
+## EXAMPLE INPUT
+**Original POV:** 3rd person limited (father)
+**Target POV:** 1st person (daughter)
+
+**Scene:**
+He watched her from the doorway, unnoticed. She was dancing again, though slower now. The tambourine in her hand caught the last light of the evening like it didn’t want to let go.
+
+**Voice Notes:**
+Keep the pacing and sensory detail. Use subtle dread, not direct fear.
+
+**Original POV:** 3rd person limited (father)
+
+**Target POV:** 1st person (daughter)
+
+**Scene:**
+He watched her from the doorway, unnoticed. She was dancing again, though slower now. The tambourine in her hand caught the last light of the evening like it didn’t want to let go.
+
+**Voice Notes:**
+Keep the pacing and sensory detail. Use subtle dread, not direct fear.
+
+---
+
+## OPTIONAL TIPS FOR MULTI-POV PROJECTS
+
+- Run this tool across parallel scenes to build dueling perspectives
+- Shift from 3rd to 1st to test narrative intimacy
+- Use as an intermediate step for anthologies or serials with rotating narrators
+
+---
+
+## SOURCE START
+
+Paste your original POV, target POV, scene, and voice cues here:
+
+{{POV_BLOCK_HERE}}
