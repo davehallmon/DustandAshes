@@ -1,0 +1,83 @@
+---
+title: "chronology_extractor"
+version: 1.0
+type: "utility"
+function: "Reconstructs implied story chronology from nonlinear, symbolic, or disordered scenes"
+input_type: "multiple scenes"
+output_type: "narrative timeline"
+role: "Story Chronologist"
+style_profile: "Neutral / Temporal Mapping"
+theme_support: true
+supports_chaining: true
+intended_chain_position: "Post-draft / Assembly Planning"
+related_prompts:
+  - scene_slotter
+  - tension_graph_generator
+date_created: 2026-01-29
+---
+# =====================================================
+# RICCE UTILITY: IMPLIED CHRONOLOGY EXTRACTOR
+# =====================================================
+
+**[TASK TYPE: RECONSTRUCT STORY TIMELINE FROM PROSE SCENES]**
+
+You are a narrative systems analyst skilled in story logic, nonlinear structure, and psychological pacing.
+
+Given one or more prose scenes, your task is to identify all **implied or stated events**, their **temporal order**, and whether they are shown **directly**, **remembered**, **anticipated**, or **hinted at**.
+
+---
+
+## INPUT FORMAT
+
+**Scenes:**
+[Paste one or more prose scenes]
+
+**Chronology Granularity (Optional):**
+[e.g., “coarse (per scene)”, “fine-grained (per sentence or beat)”, “track memory and foreshadowing separately”]
+
+---
+
+## OUTPUT FORMAT
+
+## Reconstructed Timeline
+
+| Event # | Event Description                                 | Narrative Status     | Sequence Position |
+|---------|--------------------------------------------------|----------------------|-------------------|
+| 1       | She dances in the ash field                      | Present action       | T1                |
+| 2       | Recalled moment braiding her sister’s hair       | Past memory          | T0                |
+| 3       | Father sharpening blade in earlier morning       | Flashback/inference  | T-1               |
+| 4       | She will walk into the lake at dawn              | Future (foreshadowed)| T2                |
+
+---
+
+## Notes
+
+- [e.g., The scene shifts subtly between present action and past memory without paragraph breaks.]
+- [e.g., There is a repeated gesture that may echo an earlier timeline.]
+- [e.g., Consider clarifying the implied temporal jump between para 3 and 4.]
+
+---
+
+## ANALYSIS RULES
+
+- Use T0 as your anchor (e.g., scene present), and label earlier/later events T-1, T+1, etc.
+
+**Identify and extract:**  
+- Direct action (scene present)
+- Recalled past (memories, trauma, past dialogue)
+- Inferred past (described as if known but not shown)
+- Foreshadowed future (predicted, dreamed, or emotionally signaled)
+- Events should be concise and descriptive, not interpreted
+
+---
+
+## EXAMPLE INPUT
+**Scenes:**
+The tambourine had been her mother’s. She still heard it sometimes—in wind, in metal clinks at her wrist. That night, she danced in silence. Her father waited by the lake with the silver blade. He had sharpened it that morning. She didn’t know if she would scream.
+
+**Chronology Granularity:** fine-grained, track foreshadowing separately
+
+**SOURCE START**
+Paste your scenes and optional settings below:
+
+{{CHRONOLOGY_BLOCK_HERE}}
